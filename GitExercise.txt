@@ -1,0 +1,50 @@
+Step 1.
+brew install git
+
+Step 2.
+git config --global user.name 'Keith Phan'
+git config --global user.email 'keith.phan12@gmail.com'
+
+Step 3.
+cd workspace/UMGBC
+mkdir GitAdventure
+cd GitAdventure
+git init
+
+Step 4.
+echo 'Embarking on my journey to master Git.' > journey.txt
+git status
+git add journey.txt
+git commit -m 'First commit'
+
+Step 5.
+echo 'This file is meant to be deleted.' > temp.txt
+git add temp.txt
+git commit -m 'temp.txt to be deleted'
+git rm temp.txt
+git commit -m 'Deleted temp.txt'
+
+Step 6.
+git mv journey.txt adventure.txt
+echo 'My journey evolves into an adventure with Git.' > adventure.txt
+git add adventure.txt
+git commit -m 'My journey.txt evolved into an adventure.txt'
+
+Step 7.
+echo '*.log' > .gitignore
+git add .gitignore
+git commit -m 'Added .gitignore'
+touch test.log
+git status
+
+Step 8.
+echo 'Exploring the depths of git commands and their powers.' >> adventure.txt
+git status -s
+git add adventure.txt
+git commit -m 'Updated adventure.txt'
+
+Step 9.
+git log --online
+git restore --source=33919ce adventure.txt
+git add adventure.txt
+git commit -m 'adventure.txt is back to its original state'
