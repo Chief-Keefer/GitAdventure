@@ -1,0 +1,14 @@
+1.
+git branch feature-1
+
+2. 
+A fast-forward merge happens when the branch being merged is just an extension of the main branch. Like you're adding more dominoes in a line of dominoes. A recursive merge is like merging 2 lines of dominoes into one line.
+
+3.
+git checkout <branch-name>
+
+4.
+git push -u origin --delete <branch-name>
+
+5.
+When there are different commits coming onto the main branch with changes to the same file
